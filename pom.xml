@@ -57,7 +57,7 @@
 
     <groupId>com.github.fommil.netlib</groupId>
     <artifactId>parent</artifactId>
-    <version>1.1</version>
+    <version>1.1.3</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -219,7 +219,7 @@
                 <plugin>
                     <groupId>com.github.fommil.netlib</groupId>
                     <artifactId>generator</artifactId>
-                    <version>${project.version}</version>
+                    <version>1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

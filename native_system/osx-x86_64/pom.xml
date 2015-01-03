@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.github.fommil.netlib</groupId>
         <artifactId>native_system</artifactId>
-        <version>1.1</version>
+        <version>1.1.3</version>
     </parent>
 
     <artifactId>netlib-native_system-osx-x86_64</artifactId>
@@ -63,15 +63,15 @@
                 <extensions>true</extensions>
                 <configuration>
                     <javahOS>darwin</javahOS>
-                    <compilerExecutable>gcc-mp-4.8</compilerExecutable>
-                    <linkerExecutable>gcc-mp-4.8</linkerExecutable>
+                    <compilerExecutable>gcc-4.8</compilerExecutable>
+                    <linkerExecutable>gcc-4.8</linkerExecutable>
                     <compilerEndOptions>
                         <compilerEndOption>-I/System/Library/Frameworks/vecLib.framework/Headers</compilerEndOption>
                     </compilerEndOptions>
                     <linkerMiddleOptions>
                         <linkerMiddleOption>-dynamiclib</linkerMiddleOption>
                         <linkerMiddleOption>-static-libgfortran</linkerMiddleOption>
-                        <linkerMiddleOption>/opt/local/lib/gcc48/libquadmath.a</linkerMiddleOption>
+                        <linkerMiddleOption>/usr/local/lib/gcc/x86_64-apple-darwin13.2.0/4.8.3/libquadmath.a</linkerMiddleOption>
                         <linkerMiddleOption>-static-libgcc</linkerMiddleOption>
                         <linkerMiddleOption>-framework JavaVM</linkerMiddleOption>
                         <linkerMiddleOption>-framework veclib</linkerMiddleOption>
